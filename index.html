@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Recipe Book </title>
+        <style>
+            .container {
+                margin: auto;
+                position: relative;
+                display: inline-block;
+                position: absolute;
+                top: 20%;
+                left: 25%;
+                justify-content: center;
+                width: 700px;
+                height: 400px;  
+                border-radius: 10px;
+                box-shadow: 0 0 128px 0 rgba(54, 1, 1, 0.1),         
+                0 32px 64px -48px rgba(0,0,0,0.5);
+            }
+        
+            .container2 {
+                position: absolute;
+                top: 50%; 
+                left: 75%; 
+                padding: 10px;
+                padding-left: 30px;
+                padding-right: 30px;
+                transform: translate(-50%, -50%); 
+                width: 320px;
+                height: 380px;
+                font-size: 20px; 
+                background: white;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                line-height: 15px;
+                
+            }
+            .button {
+                font-size: 20px;
+                background: white;
+            }
+            .button:hover {
+                background-color: black;
+                color: white;
+              }
+            input[type=text] {
+                width: 100%;
+                padding: 5px 15px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+            input[type=password] {
+                width: 100%;
+                padding: 5px 15px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+            button {
+                width: 100%;
+                padding: 10px 20px;
+                background:white;
+                color: white;
+            }
+            a{
+                color: black;
+                font-size: larger;
+            }
+        </style>
+    </head>
+    <body style="background: rgb(109, 0, 0);"><p class="top">
+        <div class="container">
+            <img src="https://www.shutterstock.com/image-photo/notepad-your-recipe-herbs-spices-260nw-370298699.jpg"height="400px" width="50%" style="border-bottom-left-radius: 10px;border-top-left-radius: 10px;">
+            <div class="container2"> 
+                <p style="font-family: Lucida Bright;font-size: 20px;">Login <br> </p>
+                <p style="color: blue;font-size:15px;">Welcome back...</p>
+                <form method="post">
+                     <p style="font-size: 15px;">Username: </p>
+                    <input type="text" id="username" name="username" required> 
+                    <p style="font-size: 15px;">Password: </p>
+                    <input type="password" id="password" name="password" required>
+                    <a href="" style="float: right;"><p style="font-size: 15px;">Forgot Password?</p> </a></form>
+                    <!-- <input type="submit" id="submit" name="submit" value="Login"></a> -->
+                    <button><a href="index2.html">Login</a></button>
+                    <center><a href="./signup.html"  target="_blank"><p style="font-size: 15px;"></p>Don't have an account?Sign_up</a></center>
+                    <a href="./index4.html" ></a>
+            </div>
+        </div>
+    </body>
+</html>
+
+

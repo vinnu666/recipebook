@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign_up</title>
+
+        <style>
+            .container {
+                margin: auto;
+                position: relative;
+                display: inline-block;
+                position: absolute;
+                top: 15%;
+                left: 25%;
+                justify-content: center;
+                width: 700px;
+                height: 450px;  
+                border-radius: 10px;
+                box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),         
+                0 32px 64px -48px rgba(0,0,0,0.5);
+            }
+        
+            .container2 {
+                position: absolute;
+                top: 50%; 
+                left: 75%; 
+                padding: 10px;
+                padding-left: 30px;
+                padding-right: 30px;
+                transform: translate(-50%, -50%); 
+                width: 320px;
+                height: 430px;
+                font-size: 20px; 
+                background: white;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                line-height: 15px;
+                
+            }
+            input[type=text] {
+                width: 100%;
+                padding: 5px 15px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+            input[type=password] {
+                width: 100%;
+                padding: 5px 15px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+            button {
+                width: 100%;
+                padding: 10px 20px;
+                background:white;
+                color: white;
+            }
+            input[type=number] {
+                width: 100%;
+                padding: 5px 15px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+            a{
+                color: black;
+            }
+        </style>
+    </head>
+    <body style="background: rgb(109, 0, 0);">
+        <div class="container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq3EP7s8Ti7o5qXsjjJKL4cuJYGf_7fMmFDw&usqp=CAU"height="450px" width="50%" style="border-bottom-left-radius: 10px;border-top-left-radius: 10px;">
+            <div class="container2">
+                <form action="post">
+                    <p style="font-family: Lucida Bright;font-size: 20px;">Sign_up <br> </p>
+                    <p style="color: blue;font-size:15px;">Welcome!! Please Sign_up to see Recipes</p>
+                        <p style="font-size: 15px;">Username: </p>
+                        <input type="text" id="username" name="username" required> 
+                        <p style="font-size: 15px;">Phno: </p>
+                        <input type="number" id="Phno" name="Phno" pattern="/^[0-9]{10}+$/"title="Enter 10 digit phno" required> 
+                        <p style="font-size: 15px;">Create Password: </p>
+                        <input type="password" id="password" name="createpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+      title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        <p style="font-size: 15px;">Confirm Password: </p>
+                        <input type="password" id="password" name="confirmpassword" required> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button><a href="index2.html">Sign_up</a></button></form>
+                        <!-- <a href="./index2.html"></a>  -->
+                        <link rel="stylesheet" href="./index2.html">
+                        
+            </div>
+        </div>
+    </body>
+</html>
